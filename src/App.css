@@ -1,0 +1,222 @@
+.app-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .app-logo {
+        animation: app-logo-spin infinite 2s linear;
+    }
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+.only-flex {
+    display: flex;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.full-width {
+    width: 100%;
+}
+.full-height {
+    height: 100%;
+}
+.flex-grow {
+    flex-grow: 1;
+}
+.bold {
+    font-weight: bold !important;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.align-start {
+    align-items: flex-start;
+}
+.align-center {
+    align-items: center;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.relative {
+    position: relative;
+}
+.bold {
+    font-weight: bold;
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+.ellipsis-2 {
+    display: inline;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+}
+.half-height {
+    height: 50%;
+}
+.cursor-pointer:hover {
+    cursor: pointer;
+}
+.cursor-pointer-active:hover {
+    cursor: pointer;
+    color: deepskyblue;
+}
+.cursor-move {
+    cursor: move;
+}
+.px-1 {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.bg-white {
+    background-color: white;
+}
+.absolute {
+    position: absolute;
+}
+.absolute-full {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+.absolute-top-right {
+    top: 0;
+    right: 0;
+    position: absolute;
+    padding: 5px 9px;
+}
+.absolute-top {
+    left: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+.absolute-bottom-right {
+    left: 0;
+    bottom: 0;
+    padding: 9px 9px;
+    position: absolute;
+}
+.fixed {
+    position: fixed;
+}
+.fixed-center {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.image-mask {
+    background-color: rgba(0, 0, 0, 0.35);
+}
+.image-contain {
+    object-fit: contain;
+}
+.recently-image {
+    width: 100%;
+    height: 20vh;
+    object-fit: contain;
+}
+.message-list {
+    height: 55vh;
+    overflow: auto;
+    padding-bottom: 3px;
+}
+.underline:hover {
+    text-decoration: underline;
+}
+.underline-disable {
+    text-decoration: none;
+}
+.ReactModal__Overlay--after-open {
+    z-index: 2000 !important;
+}
+.transfrom-main {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+@keyframes app-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.tooltip .tooltipcontainer {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 7px 10px;
+    position: absolute;
+    z-index: 5000;
+    bottom: 130%;
+    left: 50%;
+    margin-left: -110px;
+}
+
+.tooltip .tooltipcontainer::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltipcontainer {
+    visibility: visible;
+}
+.sticky-bottom {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    bottom: 0;
+}
+.markup-label-issue {
+    text-decoration: none;
+    
+}
